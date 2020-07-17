@@ -1,0 +1,33 @@
+int main()
+{
+    int n,i,dc[1000000],q=0,ac=0,s=0,count=0;
+    scanf("%d",&n);
+    char *a=malloc(sizeof(char)*n);
+    for(i=0;i<=n;i++)
+    {
+       
+        scanf("%c",&a[i]);
+        //printf("%c",a[i]);
+        if(a[i]=='U')
+        {
+            dc[q]=1;
+            q++;
+        }
+        else if(a[i]=='D') {
+        dc[q]=-1;
+        q++;
+        }
+    }
+    for(i=0;i<q;i++)
+    {
+        
+        //printf("%d ",dc[i]);
+        s+=dc[i];
+        //printf("%d ",s);
+        if(s==0 && dc[i]>0)
+        {
+            count+=1;
+        }
+    }
+    printf("%d",count);
+}

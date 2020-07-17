@@ -1,0 +1,17 @@
+			WELCOME			
+
+
+		MENU: 		
+			1.Admin
+			2.Teacher
+			3.Student
+		enter menu option: 1
+
+
+		SUB MENU:		
+			1.Add teacher
+			2.Addstudent
+enter submenu option: 2
+		enter details of student		
+name: shis
+id: 162
